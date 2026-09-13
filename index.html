@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Boost Society — studio de personal branding du Grand Genève. Stratégie, scripts, tournage et montage de vidéos verticales. France et Suisse.">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://boostsociety.ch/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Boost Society">
+<meta property="og:title" content="Boost Society — Devenez la référence de votre métier">
+<meta property="og:description" content="En 90 minutes de tournage par mois, nous transformons votre expertise en vidéos qui vous font connaître.">
+<meta property="og:url" content="https://boostsociety.ch/">
+<meta property="og:image" content="https://boostsociety.ch/hero-poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 fill=%27%230B0A09%27/%3E%3Ctext x=%2750%27 y=%2772%27 font-family=%27Archivo,Helvetica,Arial,sans-serif%27 font-size=%2772%27 font-weight=%27800%27 fill=%27%23F2EFE8%27 text-anchor=%27middle%27%3EB%3C/text%3E%3C/svg%3E">
+<title>Boost Society</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap">
+
+<style>
+  :root{
+    --black:#000000;
+    --paper:#F2EFEA;
+    --ink:#0C0B0A;
+    --on-black:#F2EFEA;
+    --on-black-soft:#A9A398;
+    --on-paper-soft:#5C574E;
+    --rule-black:#282521;
+    --rule-paper:#DAD5CC;
+
+    --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
+    --f-accent:"Instrument Serif",Georgia,serif;
+    --f-body:"Inter","Helvetica Neue",Arial,sans-serif;
+
+    --s--1:clamp(.8rem,.78rem + .1vw,.88rem);
+    --s-0:clamp(1rem,.96rem + .2vw,1.1rem);
+    --s-1:clamp(1.15rem,1.05rem + .5vw,1.4rem);
+    --s-2:clamp(1.6rem,1.3rem + 1.3vw,2.4rem);
+    --s-3:clamp(2.1rem,1.5rem + 2.6vw,3.6rem);
+    --s-4:clamp(2.6rem,1.4rem + 5.6vw,5.8rem);
+
+    --gutter:clamp(20px,5vw,56px);
+  }
+
+  *,*::before,*::after{box-sizing:border-box}
+  body{background:var(--black);color:var(--on-black);font-family:var(--f-body);font-size:var(--s-0);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1200px;margin:0 auto;padding-inline:var(--gutter)}
+  h1,h2,h3{font-family:var(--f-display);font-weight:700;letter-spacing:-.035em;line-height:1.02;text-wrap:balance;margin:0}
+  p{margin:0}
+  .serif{font-family:var(--f-accent);font-style:italic;font-weight:400;letter-spacing:-.01em}
+
+  .btn{
+    display:inline-flex;align-items:center;gap:12px;
+    font-family:var(--f-body);font-weight:500;font-size:var(--s-0);
+    background:var(--paper);color:var(--ink);
+    padding:12px 26px 12px 12px;border-radius:999px;text-decoration:none;
+    transition:transform .18s ease,opacity .18s ease;
+  }
+  .btn .plus{width:34px;height:34px;border-radius:50%;border:1px solid rgba(12,11,10,.25);display:grid;place-items:center;font-size:1.15rem;line-height:1;flex:none}
+  .btn:hover{transform:translateY(-1px);opacity:.92}
+  .btn:focus-visible{outline:2px solid var(--paper);outline-offset:3px}
+  .btn--dark{background:var(--ink);color:var(--paper)}
+  .btn--dark .plus{border-color:rgba(242,239,234,.3)}
+
+  /* ---------------- 1 · HERO ---------------- */
+  .topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:22px}
+  .logo{display:flex;align-items:baseline;gap:9px;font-family:var(--f-display);font-weight:800;letter-spacing:-.04em;font-size:1.3rem;color:var(--on-black);text-decoration:none}
+  .logo i{font-family:var(--f-accent);font-style:italic;font-weight:400;font-size:1.05rem;letter-spacing:0;color:var(--on-black-soft)}
+
+  .hero{position:relative;padding-block:clamp(28px,5vw,56px) clamp(48px,7vw,90px);text-align:center}
+  .hero-type{position:relative;z-index:1}
+  .hero h1{font-size:var(--s-4)}
+  .hero .serif{display:block;font-size:calc(var(--s-4) * 1.02);color:#B9B3A8;margin-top:.06em}
+  .hero-sub{margin-top:clamp(18px,2.5vw,26px);color:var(--on-black-soft);font-size:var(--s-1);max-width:46ch;margin-inline:auto}
+
+  .phone-stage{display:flex;justify-content:center;margin-top:clamp(28px,4vw,44px)}
+  .phone{
+    width:min(300px,78vw);aspect-ratio:9/19.3;flex:none;
+    background:#0A0A0A;border:1px solid #2A2724;border-radius:42px;
+    padding:9px;box-shadow:0 40px 90px rgba(0,0,0,.85),0 0 0 1px rgba(242,239,234,.06);
+    position:relative;
+  }
+  .phone::after{
+    content:"";position:absolute;top:20px;left:50%;transform:translateX(-50%);
+    width:82px;height:22px;border-radius:999px;background:#000;z-index:3;
+  }
+  .screen{
+    width:100%;height:100%;border-radius:34px;overflow:hidden;position:relative;
+    background:linear-gradient(165deg,#232019 0%,#12100C 55%,#0A0907 100%);
+    display:grid;place-items:center;
+  }
+  .screen video{width:100%;height:100%;object-fit:cover;display:block}
+  .screen-empty{padding:26px;text-align:center;display:flex;flex-direction:column;gap:10px;align-items:center}
+  .screen-empty b{font-family:var(--f-display);font-weight:600;font-size:var(--s-0);letter-spacing:-.01em;color:var(--on-black)}
+  .screen-empty span{font-size:var(--s--1);color:var(--on-black-soft);line-height:1.45;max-width:24ch}
+  .screen-empty .dot{width:44px;height:44px;border-radius:50%;border:1px solid rgba(242,239,234,.28);display:grid;place-items:center;margin-bottom:4px}
+  .screen-empty .dot::before{content:"";border-left:12px solid rgba(242,239,234,.8);border-block:8px solid transparent;margin-left:3px}
+
+  .hero-actions{display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:clamp(30px,4vw,44px)}
+  .hero-actions small{color:var(--on-black-soft);font-size:var(--s--1)}
+
+  /* ---------------- 2 · SERVICES ---------------- */
+  .services-band{background:var(--paper);color:var(--ink)}
+  .services-band .wrap{padding-block:clamp(56px,8vw,104px)}
+  .rule{height:1px;background:var(--rule-paper);margin-bottom:clamp(24px,3vw,36px)}
+  .services-band h2{font-size:var(--s-3);font-weight:500;letter-spacing:-.03em}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(20px,2.6vw,30px);margin-top:clamp(30px,4vw,48px)}
+  .card figure{
+    margin:0;aspect-ratio:4/3;border-radius:6px;overflow:hidden;position:relative;
+    display:flex;align-items:flex-end;padding:22px;
+  }
+  .card:nth-child(1) figure{background:linear-gradient(150deg,#4A2A26 0%,#1B100E 100%)}
+  .card:nth-child(2) figure{background:linear-gradient(150deg,#5A3A15 0%,#17100A 100%)}
+  .card:nth-child(3) figure{background:linear-gradient(150deg,#16303C 0%,#080F13 100%)}
+  .card figcaption{font-family:var(--f-display);font-weight:500;font-size:var(--s-2);letter-spacing:-.03em;color:var(--paper);position:relative;z-index:1}
+  .chips{position:absolute;top:18px;left:18px;display:flex;flex-wrap:wrap;gap:8px;z-index:1}
+  .chip{font-size:var(--s--1);background:rgba(242,239,234,.14);color:var(--paper);border:1px solid rgba(242,239,234,.18);padding:5px 12px;border-radius:999px;backdrop-filter:blur(6px)}
+  .card p{margin-top:16px;color:var(--on-paper-soft);max-width:40ch}
+
+  /* ---------------- 3 · TARIFS ---------------- */
+  .pricing .wrap{padding-block:clamp(56px,8vw,104px)}
+  .rule-dark{height:1px;background:var(--rule-black);margin-bottom:clamp(24px,3vw,36px)}
+  .pricing h2{font-size:var(--s-3);font-weight:500;letter-spacing:-.03em}
+  .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(275px,1fr));gap:0;margin-top:clamp(30px,4vw,48px);border:1px solid var(--rule-black);border-radius:6px;overflow:hidden}
+  .plan{padding:clamp(26px,3vw,38px);display:flex;flex-direction:column;gap:0;border-left:1px solid var(--rule-black)}
+  .plan:first-child{border-left:0}
+  .plan-name{font-family:var(--f-display);font-weight:600;font-size:var(--s--1);letter-spacing:.16em;text-transform:uppercase;color:var(--on-black-soft)}
+  .plan-price{font-family:var(--f-accent);font-style:italic;font-size:clamp(2.2rem,1.4rem + 2.6vw,3.2rem);line-height:1;margin-top:16px;letter-spacing:-.01em}
+  .plan-price sub{font-size:.36em;font-style:italic;vertical-align:baseline;margin-left:4px;color:var(--on-black-soft)}
+  .plan-pitch{margin-top:18px;color:var(--on-black);max-width:34ch}
+  .plan-min{margin-top:12px;font-size:var(--s--1);color:var(--on-black-soft)}
+  .plan-sep{height:1px;background:var(--rule-black);margin-block:clamp(22px,3vw,30px)}
+  .plan-inc{font-family:var(--f-display);font-weight:500;font-size:var(--s--1);letter-spacing:.14em;text-transform:uppercase;color:var(--on-black-soft)}
+  .plan ul{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-direction:column;gap:11px}
+  .plan li{display:flex;gap:11px;align-items:flex-start;color:var(--on-black)}
+  .tick{width:18px;height:18px;border-radius:50%;border:1px solid var(--on-black-soft);display:grid;place-items:center;flex:none;margin-top:.28em;font-size:.62rem;line-height:1;color:var(--on-black)}
+  .plan .btn{margin-top:clamp(24px,3vw,34px);align-self:stretch;justify-content:center}
+  .plan-foot{margin-top:auto}
+
+  .options{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px 28px;margin-top:clamp(26px,3vw,36px)}
+  .option{display:flex;justify-content:space-between;gap:14px;border-top:1px solid var(--rule-black);padding-top:12px;font-size:var(--s--1)}
+  .option b{font-family:var(--f-display);font-weight:500}
+  .option span{color:var(--on-black-soft);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+
+  .pricing-sub{margin-top:14px;color:var(--on-black-soft);max-width:46ch}
+  .plan--lead{background:#0E0D0B}
+  .plan-flag{font-family:var(--f-body);font-size:.68rem;font-weight:500;letter-spacing:.06em;text-transform:none;color:var(--ink);background:var(--paper);padding:3px 9px;border-radius:999px;margin-left:8px;vertical-align:middle}
+  .setup{margin-top:clamp(20px,2.6vw,28px);border:1px solid var(--rule-black);border-radius:6px;padding:clamp(20px,2.4vw,28px);display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;justify-content:space-between}
+  .setup-name{font-family:var(--f-display);font-weight:600;font-size:var(--s--1);letter-spacing:.16em;text-transform:uppercase;color:var(--on-black-soft)}
+  .setup-desc{margin-top:8px;color:var(--on-black);max-width:52ch}
+  .setup-price{font-family:var(--f-accent);font-style:italic;font-size:clamp(1.6rem,1.2rem + 1.2vw,2.1rem);line-height:1;white-space:nowrap}
+  .wa-line{font-family:var(--f-display);font-weight:500;letter-spacing:.02em;color:var(--on-black-soft);font-size:var(--s-0)}
+  .pricing-note{margin-top:clamp(22px,2.6vw,30px);font-size:var(--s--1);color:var(--on-black-soft)}
+
+  /* ---------------- CLÔTURE ---------------- */
+  .closing{text-align:center}
+  .closing .wrap{padding-block:clamp(64px,9vw,120px);display:flex;flex-direction:column;align-items:center;gap:22px}
+  .closing h2{font-size:var(--s-3);font-weight:500}
+  .closing .serif{display:block;color:#B9B3A8;font-size:calc(var(--s-3) * 1.04);margin-top:.05em}
+  .closing p{color:var(--on-black-soft);max-width:48ch}
+
+  footer{border-top:1px solid var(--rule-black)}
+  footer .wrap{padding-block:30px;display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:space-between;font-size:var(--s--1);color:var(--on-black-soft)}
+  footer b{font-family:var(--f-display);font-weight:700;color:var(--on-black)}
+
+  @media (max-width:860px){
+    .plan{border-left:0;border-top:1px solid var(--rule-black)}
+    .plan:first-child{border-top:0}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<!-- ============ 1 · TITRE + IPHONE + CTA ============ -->
+<header class="wrap">
+  <div class="topbar">
+    <a class="logo" href="#"><i>Agence</i>BOOST SOCIETY</a>
+    <a class="btn" href="https://wa.me/41772357933?text=Bonjour%20Paola%2C%20je%20viens%20du%20site%20Boost%20Society.%20J%27aimerais%20%C3%A9changer%20sur%20mes%20vid%C3%A9os." target="_blank" rel="noopener"><span class="plus">+</span>Réserver mon appel</a>
+  </div>
+</header>
+
+<section class="wrap hero">
+  <div class="hero-type">
+    <h1>Devenez la référence<span class="serif">de votre métier</span></h1>
+    <p class="hero-sub">Le studio de personal branding du Grand Genève.</p>
+  </div>
+
+  <div class="phone-stage">
+    <div class="phone">
+      <div class="screen">
+        <video
+          src="hero.mp4"
+          poster="hero-poster.jpg"
+          autoplay muted loop playsinline preload="metadata"
+          aria-label="Vidéo verticale produite par Boost Society : une médecin esthétique face caméra."></video>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-actions">
+    <a class="btn" href="https://wa.me/41772357933?text=Bonjour%20Paola%2C%20je%20viens%20du%20site%20Boost%20Society.%20J%27aimerais%20%C3%A9changer%20sur%20mes%20vid%C3%A9os." target="_blank" rel="noopener"><span class="plus">+</span>Réserver mon appel</a>
+  </div>
+</section>
+
+<!-- ============ 2 · NOS SERVICES ============ -->
+<section class="services-band">
+  <div class="wrap">
+    <div class="rule"></div>
+    <h2>Nos services</h2>
+    <div class="cards">
+      <article class="card">
+        <figure>
+          <div class="chips"><span class="chip">Positionnement</span><span class="chip">Sujets</span></div>
+          <figcaption>Ligne éditoriale</figcaption>
+        </figure>
+        <p>On définit l'angle qui vous distingue de vos confrères et on construit une ligne de sujets qui tient sur six mois.</p>
+      </article>
+      <article class="card">
+        <figure>
+          <div class="chips"><span class="chip">Vidéo verticale</span></div>
+          <figcaption>Tournage</figcaption>
+        </figure>
+        <p>Vous arrivez, vous parlez, on s'occupe du reste. Scripts écrits à l'avance, coaching caméra, tournage, montage et sous-titres.</p>
+      </article>
+      <article class="card">
+        <figure>
+          <div class="chips"><span class="chip">Publication</span><span class="chip">Légendes</span></div>
+          <figcaption>Diffusion</figcaption>
+        </figure>
+        <p>On gère le calendrier et le rythme de publication, pour une présence constante plutôt que trois vidéos puis plus rien.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3 · LES TARIFS ============ -->
+<section class="pricing" id="tarifs">
+  <div class="wrap">
+    <div class="rule-dark"></div>
+    <h2>Choisissez votre rythme</h2>
+    <p class="pricing-sub">Trois formules, sans engagement. Vous partez quand vous voulez.</p>
+
+    <div class="plans">
+      <div class="plan">
+        <div>
+          <p class="plan-name">Présence</p>
+          <p class="plan-price">900 CHF<sub>/mois</sub></p>
+          <p class="plan-pitch">Restez dans la tête de vos clients avec une vidéo par semaine. (4 vidéos/mois)</p>
+          <p class="plan-min">Sans engagement</p>
+        </div>
+        <div class="plan-foot">
+          <div class="plan-sep"></div>
+          <p class="plan-inc">Inclus dans l'abonnement</p>
+          <ul>
+            <li><span class="tick">✓</span>Déplacement et tournage sur place</li>
+            <li><span class="tick">✓</span>90 min de tournage par mois</li>
+            <li><span class="tick">✓</span>Écriture des scripts</li>
+            <li><span class="tick">✓</span>Coaching en prise de parole</li>
+            <li><span class="tick">✓</span>Montage, sous-titres, livraison sous 7 jours</li>
+          </ul>
+          <a class="btn" href="https://wa.me/41772357933?text=Bonjour%20Paola%2C%20je%20viens%20du%20site%20Boost%20Society.%20J%27aimerais%20%C3%A9changer%20sur%20mes%20vid%C3%A9os." target="_blank" rel="noopener">Prendre rendez-vous</a>
+        </div>
+      </div>
+
+      <div class="plan plan--lead">
+        <div>
+          <p class="plan-name">Autorité <span class="plan-flag">Le plus choisi</span></p>
+          <p class="plan-price">1 500 CHF<sub>/mois</sub></p>
+          <p class="plan-pitch">Installez votre autorité avec une vidéo tous les cinq jours. (6 vidéos/mois)</p>
+          <p class="plan-min">Sans engagement</p>
+        </div>
+        <div class="plan-foot">
+          <div class="plan-sep"></div>
+          <p class="plan-inc">Inclus dans l'abonnement</p>
+          <ul>
+            <li><span class="tick">✓</span>Déplacement et tournage sur place</li>
+            <li><span class="tick">✓</span>90 min de tournage par mois</li>
+            <li><span class="tick">✓</span>Écriture des scripts</li>
+            <li><span class="tick">✓</span>Coaching en prise de parole</li>
+            <li><span class="tick">✓</span>Montage, sous-titres, livraison sous 7 jours</li>
+            <li><span class="tick">✓</span>Accompagnement à la diffusion</li>
+          </ul>
+          <a class="btn" href="https://wa.me/41772357933?text=Bonjour%20Paola%2C%20je%20viens%20du%20site%20Boost%20Society.%20J%27aimerais%20%C3%A9changer%20sur%20mes%20vid%C3%A9os." target="_blank" rel="noopener">Prendre rendez-vous</a>
+        </div>
+      </div>
+
+      <div class="plan">
+        <div>
+          <p class="plan-name">Signature</p>
+          <p class="plan-price">2 300 CHF<sub>/mois</sub></p>
+          <p class="plan-pitch">Occupez le terrain avec deux à trois vidéos par semaine. (10 vidéos/mois)</p>
+          <p class="plan-min">Sans engagement</p>
+        </div>
+        <div class="plan-foot">
+          <div class="plan-sep"></div>
+          <p class="plan-inc">Inclus dans l'abonnement</p>
+          <ul>
+            <li><span class="tick">✓</span>Déplacement et tournage sur place</li>
+            <li><span class="tick">✓</span>3 h de tournage par mois</li>
+            <li><span class="tick">✓</span>Écriture des scripts</li>
+            <li><span class="tick">✓</span>Coaching en prise de parole</li>
+            <li><span class="tick">✓</span>Montage, sous-titres, livraison sous 7 jours</li>
+            <li><span class="tick">✓</span>Publication et community management</li>
+          </ul>
+          <a class="btn" href="https://wa.me/41772357933?text=Bonjour%20Paola%2C%20je%20viens%20du%20site%20Boost%20Society.%20J%27aimerais%20%C3%A9changer%20sur%20mes%20vid%C3%A9os." target="_blank" rel="noopener">Prendre rendez-vous</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="options">
+      <div class="option"><b>Publication des contenus</b><span>+200 CHF/mois</span></div>
+      <div class="option"><b>Gestion des réseaux</b><span>+600 CHF/mois</span></div>
+      <div class="option"><b>Campagnes Meta</b><span>+500 CHF/mois</span></div>
+      <div class="option"><b>Vidéo supplémentaire</b><span>200 à 300 CHF</span></div>
+    </div>
+
+    <p class="pricing-note">Prix nets, sans TVA. Facturation en euros possible pour les clients français.</p>
+  </div>
+</section>
+
+<!-- ============ CLÔTURE ============ -->
+<section class="closing" id="appel">
+  <div class="wrap">
+    <h2>Prêt·e à passer<span class="serif">devant la caméra ?</span></h2>
+    <p>Vingt minutes pour regarder ce que vous savez faire, et vous dire franchement si la vidéo a un intérêt pour votre métier.</p>
+    <a class="btn" href="https://wa.me/41772357933?text=Bonjour%20Paola%2C%20je%20viens%20du%20site%20Boost%20Society.%20J%27aimerais%20%C3%A9changer%20sur%20mes%20vid%C3%A9os." target="_blank" rel="noopener" id="cta-call"><span class="plus">+</span>Écrire sur WhatsApp</a>
+    <p class="wa-line">077 235 79 33</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span><b>Boost Society</b> — Personal branding &amp; vidéo</span>
+    <span>Divonne-les-Bains · 077 235 79 33 · @boostsociety.agency</span>
+  </div>
+</footer>
+</body>
+</html>
